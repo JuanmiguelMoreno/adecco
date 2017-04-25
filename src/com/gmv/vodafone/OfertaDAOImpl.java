@@ -46,7 +46,7 @@ public class OfertaDAOImpl implements OfertaDAO {
 	}
 
 	@Override
-	public LocalDate getFecha(int codigoOferta) {
+	public LocalDate getFecha(int codigoOferta) throws OfertaException {
 		for (Oferta oferta: ofertas) {
 			if (oferta.getCodigoOferta() == codigoOferta) {
 				return oferta.getFechaInicio();

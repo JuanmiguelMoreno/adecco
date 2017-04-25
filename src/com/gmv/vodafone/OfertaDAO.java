@@ -9,6 +9,6 @@ public interface OfertaDAO {
 	
 	Oferta getOferta(int codigoOferta) throws OfertaException;
 	
-	LocalDate getFecha (int codigoOferta);
+	LocalDate getFecha (int codigoOferta) throws OfertaException;
 
 }
